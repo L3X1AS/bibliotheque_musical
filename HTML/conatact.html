@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/contact.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-
     <meta charset="UTF-8">
     <title>Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
 </head>
-
 <body>
     <nav class="conteneur-nav">
         <div class="interieur-nav">
@@ -21,45 +18,29 @@
         </div>
     </nav>
 
-    <main class="contenu-principal">
-        <div class="section-hero">
-            <h1 class="titre-principal">Bibliothèque Musicale</h1>
-            <p class="sous-titre">Contactez-nous pour toute question ou suggestion</p>
-        </div>
-
-        <div class="conteneur-formulaire">
-            <div class="formulaire-contact">
+    <div class="contact-section">
+            <div class="form-container">
                 <h2>Contactez-nous</h2>
-
                 <form>
-                    <div class="champ">
-                        <label for="nom">Votre nom</label>
-                        <input type="text" id="nom" name="nom" placeholder="Entrez votre nom complet" required>
+                    <div class="field">
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" placeholder="Votre nom complet" required>
                     </div>
-
-                    <div class="champ">
-                        <label for="email">Votre email</label>
-                        <input type="email" id="email" name="email" placeholder="votre.email@exemple.com" required>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="votre.email@exemple.com" required>
                     </div>
-
-                    <div class="champ">
+                    <div class="field">
                         <label for="sujet">Sujet</label>
-                        <input type="text" id="sujet" name="sujet" placeholder="Objet de votre message" required>
+                        <input type="text" id="sujet" placeholder="Objet de votre message" required>
                     </div>
-
-                    <div class="champ">
-                        <label for="message">Votre message</label>
-                        <textarea id="message" name="message" placeholder="Décrivez votre demande en détail..."
-                            required></textarea>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Décrivez votre demande..." required></textarea>
                     </div>
-
-                    <button type="submit" class="bouton-envoyer">
-                        Envoyer le message
-                    </button>
+                    <button type="submit" class="btn-submit">Envoyer</button>
                 </form>
-            </div>
         </div>
-
+    </main>
 </body>
-
 </html>
