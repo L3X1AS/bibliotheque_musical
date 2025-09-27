@@ -1,0 +1,53 @@
+body > *:not(nav) {
+  margin-left: 12px;
+}
+
+body {
+  background: linear-gradient(135deg, #0d0d0d, #1c1c1c);
+  color: #fff;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+.carte p {
+  margin: 0;
+}
+
+.bloc-presentation {
+  display: flex;
+  align-items: center;  
+  border-radius: 20px;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  max-width: 1100px;
+}
+
+
+.image-container {
+  width: 40%;      
+  border-radius: 20px;
+
+}
+.carte {
+  flex: 1; 
+  max-width: 600px;
+  padding: 20px 30px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.6),
+    -15px -15px 30px rgba(60, 60, 60, 0.2);
+  color: #f5f5f5;
+  line-height: 1.6;
+  font-size: 1rem;
+}

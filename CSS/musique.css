@@ -1,0 +1,36 @@
+/* musique.css */
+
+h1 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.album {
+  background: #222;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  transition: transform 0.3s;
+}
+
+.album:hover {
+  transform: scale(1.05);
+}
+
+.album img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.album h3 {
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
