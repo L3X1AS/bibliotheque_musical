@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(135deg, #0c0c0c, #1a1a2e, #16213e);
+    background: #212121;
     color: #fff;
 }
 
@@ -120,6 +120,6 @@ textarea {
     flex: 1;
     min-width: 300px;
     max-width: 400px;
-    height: 400px; /* même taille que le formulaire */
+    height: 400px; 
 }
 

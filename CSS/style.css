@@ -3,15 +3,13 @@
   overflow-y: scroll;
   scrollbar-gutter: stable;
 }
-*, *::before, *::after { 
-  box-sizing: inherit; 
-}
+
 
 body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background: #111;
+  background: #212121;
   color: #fff;
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;

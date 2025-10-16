@@ -1,12 +1,12 @@
 body {
   font-family: "Inter", sans-serif;
-  background: linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 50%, #16213e 100%);
+  background: #212121;
   color: #fff;
   min-height: 100vh;
 }
 
 .contenu-principal {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px 80px 20px;
 }
@@ -18,15 +18,13 @@ body {
 }
 
 .titre-page {
-  margin-top: -12px;
-  font-size: clamp(3rem, 6vw, 5rem);
+  font-size: 52px;
   font-weight: 700;
   background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
   text-shadow: 0 0 20px rgba(255, 107, 107, 0.4);
-  margin-bottom: 15px;
 }
 
 .sous-titre-page {
@@ -49,7 +47,7 @@ body {
 
 .grille-albums {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-top: 40px;
 }
@@ -139,4 +137,28 @@ body {
 .info-album p {
   color: rgba(255, 255, 255, 0.7);
   font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+  .grille-albums {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .titre-page {
+    font-size: 52px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 20px rgba(255, 107, 107, 0.4);
+    margin-top: 0px;
+}
+}
+
+@media (max-width: 600px) {
+  .grille-albums {
+    grid-template-columns: 1fr;
+  }
+
 }

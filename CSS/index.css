@@ -6,7 +6,7 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background: linear-gradient(135deg, #0c0c0c, #1a1a2e, #16213e);
+  background: #212121;
   color: #fff;
   min-height: 100vh;
 }
@@ -22,7 +22,7 @@ body {
 }
 
 .titre-principal {
-  font-size: clamp(3rem, 6vw, 5rem);
+  font-size: 52px;
   font-weight: 700;
   background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
   -webkit-background-clip: text;
@@ -107,6 +107,7 @@ body {
   font-size: 1.5rem;
   cursor: pointer;
   transition: transform 0.2s ease;
+  margin
 }
 
 .icone-play:hover {
@@ -150,7 +151,7 @@ body {
 }
 
 .stat-nombre {
-  font-size: 2rem;
+  font-size: 2rem; 
   font-weight: bold;
   color: #ff6b6b;
   margin-bottom: 5px;
@@ -159,40 +160,17 @@ body {
 .stat-label {
   color: #ccc;
 }
-
-.boutons-action {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.bouton {
-  padding: 15px 30px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  display: inline-block;
-}
-
-.bouton-primaire {
-  background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
-  color: white;
-}
-
-.bouton-primaire:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(255, 107, 107, 0.3);
-}
-
-.bouton-secondaire {
-  background: transparent;
-  color: #fff;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-}
-
-.bouton-secondaire:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.5);
+@media screen and (min-width: 700px) {
+  .bloc-presentation {
+    display: flex;
+    gap: 40px;
+    align-items: anchor-center;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+  }
+  .resume {
+    font-size: 1rem;
+    line-height: 1.7;
+    text-align: justify;
+  }
 }
