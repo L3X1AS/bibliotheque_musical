@@ -20,11 +20,8 @@ body {
 .titre-page {
   font-size: 52px;
   font-weight: 700;
-  background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-shadow: 0 0 20px rgba(255, 107, 107, 0.4);
+  color: white;
+
 }
 
 .sous-titre-page {
@@ -62,10 +59,7 @@ body {
   color: inherit;
 }
 
-.carte-album:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 50px rgba(255, 107, 107, 0.2);
-}
+
 
 .image-album {
   position: relative;
@@ -104,7 +98,7 @@ body {
 }
 
 .bouton-lecture {
-  background: #ff6b6b;
+  background: black;
   border: none;
   border-radius: 50%;
   width: 60px;
@@ -147,7 +141,7 @@ body {
   .titre-page {
     font-size: 52px;
     font-weight: 700;
-    background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+    background: white;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

@@ -24,9 +24,7 @@ body {
 .titre-principal {
   font-size: 52px;
   font-weight: 700;
-  background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: white;
   background-clip: text;
   text-shadow: 0 0 20px rgba(255, 107, 107, 0.4);
 }
@@ -38,16 +36,7 @@ body {
   position: relative;
 }
 
-.sous-titre-artiste::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
-  height: 2px;
-  background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
-}
+
 
 .bloc-presentation {
   display: flex;
@@ -68,11 +57,6 @@ body {
   overflow: hidden;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3), 0 0 40px rgba(255, 107, 107, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.image-artiste:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), 0 0 50px rgba(255, 107, 107, 0.3);
 }
 
 .image-artiste img {
@@ -107,7 +91,6 @@ body {
   font-size: 1.5rem;
   cursor: pointer;
   transition: transform 0.2s ease;
-  margin
 }
 
 .icone-play:hover {
@@ -164,7 +147,7 @@ body {
   .bloc-presentation {
     display: flex;
     gap: 40px;
-    align-items: anchor-center;
+    align-items: center;
     margin-bottom: 60px;
     flex-wrap: wrap;
   }
